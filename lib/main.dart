@@ -9,7 +9,6 @@ class Home  extends StatelessWidget {
       return
         Scaffold(
           backgroundColor: Colors.white,
-
           body:
           Column(
             children: [
@@ -42,25 +41,20 @@ class Home  extends StatelessWidget {
                 child: Text("new methodology",
                   style: TextStyle(color: Colors.black45),),
               ),
-
               SizedBox(height: 150,),
-
               Row(crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                    Container(
                      child: Padding(
-                     padding: const EdgeInsets.symmetric(horizontal: 140.0),
+                     padding: EdgeInsets.symmetric(horizontal: 140.0),
                        child: ElevatedButton( child:Text("Get started",
                          style: TextStyle(fontFamily: "IndieFlower",
                              fontSize: 15)),
                          onPressed: (){
                          Navigator.push(context,
                            MaterialPageRoute(builder: (context)=>Mychallenges()),
-
                          );
-
                         },
-
                        ),
                      ),
                    ),
@@ -69,15 +63,10 @@ class Home  extends StatelessWidget {
               ),
             ],
           ),
-
          );
-
     }
   }
-
-
 class Mychallenges extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -85,7 +74,7 @@ class Mychallenges extends StatelessWidget {
       body: SafeArea(
         child: Column(children:[
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            padding: EdgeInsets.symmetric(horizontal: 25.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -104,7 +93,7 @@ class Mychallenges extends StatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child:Icon(Icons.add,
                       size: 29),
                 ),
@@ -112,7 +101,6 @@ class Mychallenges extends StatelessWidget {
             ),
           ),
           SizedBox(height: 35),
-
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25,
                                                  vertical: 15),
@@ -121,8 +109,6 @@ class Mychallenges extends StatelessWidget {
                     borderRadius: BorderRadius.circular(18)),
                 child:
               Row(children: [
-
-
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -137,8 +123,8 @@ class Mychallenges extends StatelessWidget {
                         fontSize: 17,
                         fontFamily: "IndieFlower"),
                   ),
-
-                ],),SizedBox(width: 60),
+                ],),
+                SizedBox(width: 60),
                 Container(padding:EdgeInsets.all(35) ,
                   decoration: BoxDecoration(color: Colors.black),
                   child:
@@ -149,7 +135,8 @@ class Mychallenges extends StatelessWidget {
                         fontSize: 25),
                   ),
                 )
-              ],)),
+              ],)
+            ),
           ),
           SizedBox(height: 20),
                       Container(padding: EdgeInsets.all(20),
@@ -182,7 +169,6 @@ class Mychallenges extends StatelessWidget {
               Icon(Icons.circle_outlined,color:Colors.black45,size: 45,),
                 ],
           ),
-
           SizedBox(height: 20),
                 Container(padding: EdgeInsets.all(20),
                   child: Row(
@@ -198,7 +184,6 @@ class Mychallenges extends StatelessWidget {
                     ],
                   ),
                 ),
-
           SizedBox(height: 8,),
           Row(
             children: [SizedBox(width: 20),
@@ -218,7 +203,6 @@ class Mychallenges extends StatelessWidget {
             ],
           ),
           SizedBox(height: 20),
-
                 Container(padding: EdgeInsets.all(20),
                   child: Row(
                     children: [
@@ -250,7 +234,8 @@ class Mychallenges extends StatelessWidget {
               SizedBox(width: 5,),
               Icon(Icons.circle_outlined,color:Colors.black45,size: 45,),
             ],
-          ), SizedBox(height: 5),
+          ),
+          SizedBox(height: 5),
           Divider(height: 60,color: Colors.black45,),
            Row(children: [
              SizedBox(
@@ -272,10 +257,7 @@ class Mychallenges extends StatelessWidget {
              Icon(Icons.settings_outlined,color: Colors.black45,size: 30),
            ],
     ),
-
-
         ],
-
         ),
       ),
     );
